@@ -2,6 +2,7 @@
 A stateful and cookie authentification RestClient wrapping Spring RestTemplate
 
 Usage:
+		<code>
 		SecureRestClient client = new SecureRestClient();
 		client.setHost("ivr.africasys.com");
 		client.setPort("80");
@@ -9,3 +10,4 @@ Usage:
 		client.setApplicationPath("afrivox");
 		client.login("user", "password");
 		Integer callsNumber = client.template().getForObject(client.apiUrl("callsnumber"), Integer.class);
+		</code>
